@@ -2,11 +2,12 @@ import streamlit as st
 import google.generativeai as genai
 from streamlit_option_menu import option_menu
 from PIL import Image
+# Configuración de la IA usando Secrets
+import os
 
-# 1. Configuración de la IA
-genai.configure(api_key="AIzaSyBOW2-p-OwcPKCbq54sByBQgyQw49QL2L4")
-model = genai.GenerativeModel(model_name="gemini-1.5-flash")
-
+api_key = st.secrets["AIzaSyBOW2-p-OwcPKCbq54sByBQgyQw49QL2L4"]
+genai.configure(api_key=api_key)
+model = genai.GenerativeModel('models/gemini-1.5-flash')
 st.set_page_config(page_title="카이로스 (Kairos)", layout="centered")
 
 # 2. Cargar Estilos
