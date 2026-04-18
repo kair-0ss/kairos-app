@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #FAF8F5; /* Beige claro */
+}
+
+/* Estilo para los mensajes de Kai (Modo Oscuro) */
+[data-testid="stChatMessageAssistant"] {
+    background-color: #1A2421 !important; /* Verde oscuro */
+    color: #E0E0E0 !important;
+    border-radius: 15px;
+}
+
+/* Estilo para tus mensajes (Modo Oscuro) */
+[data-testid="stChatMessageUser"] {
+    background-color: #1B2631 !important; /* Azul oscuro */
+    color: #E0E0E0 !important;
+    border-radius: 15px;
+}
