@@ -5,11 +5,10 @@ from PIL import Image
 # Configuración de la IA usando Secrets
 import os
 
-# El nombre "GOOGLE_API_KEY" es solo una etiqueta, no pongas tu código largo aquí
+
 api_key = st.secrets["AIzaSyBOW2-p-OwcPKCbq54sByBQgyQw49QL2L4"]
 genai.configure(api_key=api_key)
 model = genai.GenerativeModel('models/gemini-1.5-flash')
-
 # 2. Cargar Estilos
 with open("style.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
