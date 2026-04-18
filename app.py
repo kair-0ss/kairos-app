@@ -5,7 +5,7 @@ from PIL import Image
 
 # 1. Configuración de la IA
 genai.configure(api_key="AIzaSyBOW2-p-OwcPKCbq54sByBQgyQw49QL2L4")
-model = genai.GenerativeModel('gemini-1.5-flash')
+model = genai.GenerativeModel(model_name="gemini-1.5-flash")
 
 st.set_page_config(page_title="카이로스 (Kairos)", layout="centered")
 
